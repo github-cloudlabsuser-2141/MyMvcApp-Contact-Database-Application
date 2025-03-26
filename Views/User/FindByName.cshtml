@@ -1,0 +1,29 @@
+@model List<MyMvcApp.Models.User>
+
+<h2>Users</h2>
+
+<form method="get" asp-action="FindByName">
+    <label for="searchName">Search by Name:</label>
+    <input type="text" id="searchName" name="name" />
+    <button type="submit">Search</button>
+</form>
+
+<table>
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Email</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var user in Model)
+        {
+            <tr>
+                <td>@user.Id</td>
+                <td>@user.Name</td>
+                <td>@user.Email</td>
+            </tr>
+        }
+    </tbody>
+</table>
