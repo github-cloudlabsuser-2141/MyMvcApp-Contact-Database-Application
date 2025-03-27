@@ -3,13 +3,16 @@
   "contentVersion": "1.0.0.0",
   "parameters": {
     "webAppName": {
-      "value": "MyMvcAppMartin"
+      "value": "MyMvcApp"
     },
     "appServicePlanName": {
-      "value": "MyMvcAppServicePlanMartin"
+      "value": "MyMvcAppServicePlan"
     },
     "location": {
-      "value": "westus"
+      "value": "East US"
+    },
+    "sku": {
+      "value": "F1"
     }
   }
 }
