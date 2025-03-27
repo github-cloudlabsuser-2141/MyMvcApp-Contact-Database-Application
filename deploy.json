@@ -4,20 +4,31 @@
   "parameters": {
     "webAppName": {
       "type": "string",
+      "defaultValue": "MyMvcApp",
       "metadata": {
-        "description": "El nombre de la aplicación web."
+        "description": "The name of the Web App."
       }
     },
     "appServicePlanName": {
       "type": "string",
+      "defaultValue": "MyMvcAppServicePlan",
       "metadata": {
-        "description": "El nombre del plan de App Service."
+        "description": "The name of the App Service Plan."
       }
     },
     "location": {
       "type": "string",
+      "defaultValue": "[resourceGroup().location]",
       "metadata": {
-        "description": "La ubicación para los recursos."
+        "description": "The location for the resources."
+      }
+    },
+    "sku": {
+      "type": "string",
+      "defaultValue": "F1",
+      "allowedValues": ["F1", "B1", "B2", "B3", "S1", "S2", "S3"],
+      "metadata": {
+        "description": "The pricing tier for the App Service Plan."
       }
     }
   },
@@ -28,7 +39,7 @@
       "name": "[parameters('appServicePlanName')]",
       "location": "[parameters('location')]",
       "sku": {
-        "name": "F1",
+        "name": "[parameters('sku')]",
         "tier": "Free"
       },
       "properties": {}
