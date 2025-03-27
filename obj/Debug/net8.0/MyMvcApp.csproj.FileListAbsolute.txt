@@ -59,3 +59,5 @@ C:\Users\azureuser\GitHub Copilot\MyMvcApp-Contact-Database-Application\obj\Debu
 C:\Users\azureuser\GitHub Copilot\MyMvcApp-Contact-Database-Application\obj\Debug\net8.0\MyMvcApp.pdb
 C:\Users\azureuser\GitHub Copilot\MyMvcApp-Contact-Database-Application\obj\Debug\net8.0\MyMvcApp.genruntimeconfig.cache
 C:\Users\azureuser\GitHub Copilot\MyMvcApp-Contact-Database-Application\obj\Debug\net8.0\ref\MyMvcApp.dll
+C:\Users\azureuser\GitHub Copilot\MyMvcApp-Contact-Database-Application\bin\Debug\net8.0\deploy.json
+C:\Users\azureuser\GitHub Copilot\MyMvcApp-Contact-Database-Application\bin\Debug\net8.0\deploy.parameters.json
